@@ -1,4 +1,4 @@
-# ⚡️⚡️ signalling-server ⚡️⚡️
+# ⚡️⚡️ RTVC Signaling Server ⚡️⚡️
 
 This is the core Server that is responsible for making all the connection calls. 
 The pattern we are utilizing is MCU - WebRTC to ensure multiple group calls. 

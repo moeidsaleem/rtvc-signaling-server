@@ -5,12 +5,15 @@ const uuidv4 = require("uuid/v4");
 
 const app = express();
 
-const port = process.env.PORT || 9000;
+const port =  9000;
 
+app.use(express.static(__dirname + '/src'));
 //initialize a http server
 const server = http.createServer(app);
 
 //initialize the WebSocket server instance
+let d = new Date();
+
 const wss = new WebSocket.Server({ server });
 
 let users = {};
